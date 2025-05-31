@@ -21,13 +21,47 @@
 
 ---
 
-## ✨ Fitur Utama
+# ✨ Fitur Utama
 
 ✅ Input contract address dari **Ethereum** atau **Binance Smart Chain**  
 ✅ Deteksi apakah token **honeypot** (tidak bisa dijual kembali)  
 ✅ Analisa smart contract source code secara otomatis  
 ✅ Cek pola kode berbahaya seperti hidden fees, manipulasi saldo, atau batasan transfer  
 ✅ Menggunakan API Etherscan & BscScan serta Web3.py untuk interaksi blockchain
+
+---
+
+# 🚀 FITUR-FITUR YANG AKAN DIGAS:
+
+Fitur	Status	Keterangan
+
+| Fitur                                   | Status | Keterangan                          |
+|----------------------------------------|--------|-----------------------------------|
+| 🎯 CLI Analysis dengan input contract   | ✅      | Sudah dibuat                      |
+| 💥 Deteksi honeypot & transfer disable | ✅      | Analisa ABI                       |
+| 🧠 Otomatis analisa kode Solidity via API | ✅      | Menggunakan Etherscan API          |
+| 📂 Output JSON untuk integrasi tools lain | ✅      | Lagi disiapkan di opsi `--json` CLI |
+| 🌐 Web UI (Flask/Streamlit)             | ✅      | Sedang dibangun (index.html + Flask) |
+| 🔒 Token blacklist update otomatis       | ✅      | `blacklist.json` + auto fetch planned |
+| 🌍 Trending token auto-scan (DEXTools)    | ✅      | Bakal scraping / DEXTools API (jika available) |
+
+---
+
+# 🎨 Bonus Web UI Design (HTML/CSS)
+
+Gaya Matrix + Hijau Hacker
+
+✅ Dark mode UI
+
+✅ Input contract address
+
+✅ Tombol Check Now
+
+✅ Hasil ditampilkan real-time + JSON
+
+✅ Tombol "Export JSON"
+
+✅ Versi Mobile Friendly
 
 ---
 
@@ -80,27 +114,40 @@ Support with ☕ so I can buy 🍜 and keep being 🧠!
 
 # 🚀 🇮🇩 Let’s Connect Like Hackers
 
-- GitHub: [kongali1720](https://github.com/kongali1720)  
-- Email: [kongali1720@gmail.com](mailto:kongali1720@gmail.com)  
-- Site: Coming soon — stay curious...
+| Platform | Detail |
+|:--------|:-------|
+| GitHub  | [kongali1720](https://github.com/kongali1720) |
+| Email   | [kongali1720@gmail.com](mailto:kongali1720@gmail.com) |
+| Site    | Coming soon — stay curious... |
 
 ---
 
 # ❤️❤❤️ INITIATING HUMANITY MODE for Down Syndrome ❤️❤❤️
 
-🎯 Target Locked: Anak-anak Pejuang Down Syndrome  
-📡 Status: Butuh Dukungan  
-🧠 Response: Buka Hati + Klik Link = Satu Senyum Baru
+| Item        | Keterangan |
+|:------------|:-----------|
+| 🎯 Target   | Anak-anak Pejuang Down Syndrome |
+| 📡 Status   | Butuh Dukungan |
+| 🧠 Response | Buka Hati + Klik Link = Satu Senyum Baru |
 
 > Mereka bukan berbeda — mereka dilahirkan untuk mengajarkan dunia tentang cinta yang murni dan kesabaran yang luar biasa.
 
-<p align="center">
-  <a href="https://mydonation4ds.github.io/" target="_blank">
-    <img src="https://img.shields.io/badge/SUPPORT--NOW-%F0%9F%A7%A1-orange?style=for-the-badge&logo=heart" />
+<p align="center" style="font-size: 1.5rem;">
+  <a href="https://mydonation4ds.github.io/" target="_blank" style="display: inline-block;">
+    <img 
+      src="https://img.shields.io/badge/SUPPORT--NOW-%23FF6600?style=for-the-badge&logo=heart&logoColor=white&labelColor=white&color=FF6600" 
+      alt="Support Now" 
+      style="width: 300px; height: auto; filter: invert(1);" 
+    />
   </a>
 </p>
 
-🧡 "Karena jadi hacker hati bukan cuma soal kode... tapi juga soal peduli."  
-🧠 "Ngoding boleh sambil senyum, asal jangan inject SQL sambil ngambek!"
+
+---
+
+| Quotes | Penjelasan |
+|:-------|:-----------|
+| 🧡 "Karena jadi hacker hati bukan cuma soal kode... tapi juga soal peduli." |  |
+| 🧠 "Ngoding boleh sambil senyum, asal jangan inject SQL sambil ngambek!" |  |
 
 ---
