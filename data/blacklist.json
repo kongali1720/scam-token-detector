@@ -1,0 +1,22 @@
+{
+  "blacklisted_tokens": [
+    {
+      "name": "ScamCoin",
+      "symbol": "SCAM",
+      "address": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+      "reason": "Honeypot — can't sell token once bought"
+    },
+    {
+      "name": "FakeETH",
+      "symbol": "FETH",
+      "address": "0xbadbadbadbadbadbadbadbadbadbadbadbadbad1",
+      "reason": "Impersonates Ethereum, zero liquidity"
+    },
+    {
+      "name": "ZeroX",
+      "symbol": "ZEROX",
+      "address": "0x0000000000000000000000000000000000000000",
+      "reason": "Suspicious contract, fake transfers"
+    }
+  ]
+}
