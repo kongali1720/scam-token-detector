@@ -1,0 +1,4 @@
+{% if result %}
+  <p><strong>Contract Verified:</strong> {{ 'Yes ✅' if result.verified else 'No ❌' }}</p>
+  <p><strong>Contract Name:</strong> {{ result.contract_name }}</p>
+{% endif %}
