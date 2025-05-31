@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️ Scam Token Detector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ Scam Token Detector</h1>
+        <p>Masukkan Ethereum / BSC token contract address untuk dicek:</p>
+
+        <form id="scan-form">
+            <input type="text" id="contract" placeholder="0x..." required>
+            <button type="submit">🔍 Cek Sekarang</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('scan-form');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const contract = document.getElementById('contract').value;
+
+            result.innerHTML = '⏳ Memproses...';
+
+            try {
+                const res = await fetch('/check', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                    body: `contract=${encodeURIComponent(contract)}`
+                });
+                const data = await res.json();
+
+                if (data.error) {
+                    result.innerHTML = `❌ ${data.error}`;
+                } else {
+                    result.innerHTML = `✅ Hasil: <pre>${JSON.stringify(data, null, 2)}</pre>`;
+                }
+            } catch (err) {
+                result.innerHTML = `🚨 Error: ${err.message}`;
+            }
+        });
+    </script>
+</body>
+</html>
